@@ -1,7 +1,8 @@
-# Talleres
-Este repositorio reune los archivos asociados a los talleres de diseño de circuitos integrados de ChipUSM. Esto incluye: enunciados, insumos y resultados.
+# Taller 2
+Esta rama reune los archivos asociados al taller 2 de ChipUSM, titulado 'Diseño Analógico'. Esto incluye: enunciado, insumos y resultados.
 
-Para ver un taller selecciona la branch correspondiente:
-https://github.com/ChipUSM/Talleres/tree/taller_1
+
+
+Regresar a rama main: https://github.com/ChipUSM/Talleres/tree/main
 
 
