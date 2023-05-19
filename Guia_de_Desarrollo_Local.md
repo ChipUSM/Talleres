@@ -86,12 +86,51 @@ Alternativamente, se puede ir al sitio web `https://github.com/iic-jku/iic-osic-
 
 A continuación se detallan dos métodos para ejecutar el contenedor. Independiente del método, la primera vez que se ejecute el contenedor se descargará automáticamente la imagen. Lo mismo pasará cada vez que se actualice la versión local del repositorio `iic-osic-tools`. Este procedimiento puede demorarse en comenzar y tomar bastante tiempo. Si es interrumpido antes de que termine, puede que después no funcione. Ante problemas de este tipo, puede servir reiniciar el kernel de Docker y/o eliminar el contenedor `iic-osic-tools` de docker.
   
-#### Interfaz gráfica con VNC
+##### Interfaz gráfica con VNC
+
+Esta opción permite visualizar el entorno de desarrollo dentro de un navegador de internet (como Firefox). Este se verá como el escritorio de una máquina virtual dentro del navegador.
+  
+1. Iniciar Docker Desktop (Windows o Mac)
+2. Ejecutar start_vnc.bat` para Windows o `start_vnc.sh` para Linux/Mac.
+3. Si es la primera vez, esperar a que la imagen se instale. 
+4. Cuando se cierre la terminal, abrir `http://localhost` en un navegador y escribir la contraseña `abc123`.
+
+Un escritorio VNC aparecerá con el logo de JKU. Se puede iniciar una terminal haciendo click derecho y seleccionando `terminal emulator`.
+
    
-#### Interfaz gráfica con servidor X 
+##### Interfaz gráfica con servidor X 
+ 
+Con esta opción, el entorno de desarrollo se ve como una terminal, pero luego las herramientas que se utilicen aparecen como ventanas emergentes independientes (si es que tinene interfáz gráfica). En Windows se requiere de una aplicacion con serviror X, recomendamos [MobaXterm](https://mobaxterm.mobatek.net/download.html).
+  
+1. Iniciar Docker Desktop. (Windows o Mac)
+2. Abrir la aplicación de servidor X. (Windows o Mac)
+3. Ejecutar `start_x.bat` en Windows o `start_x.sh` en Linux/Mac.
+  
+Aparecerá una ventana emergente correspondiente a la terminal del contenedor. 
   
 ## 3. Utilización
   
-### 3.1. 
   
-### 3.2. 
+### 3.1. Archivos
+  
+  El contenedor creará una carpeta en `\usuario\EDA\eda\designs`. Esta carpeta es accesible desde el *host* y desde el entorno de desarrollo, lo que permite mover archivos fácilmente hacia o desde el contenedor.
+  
+### 3.2. Comandos
+  
+  El entorno de desarrollo es basado en UNIX, de forma que funcionan los comandos habituales usados en distribuciones de Linux.
+  
+  A continuación se presenta una tabla con comandos comunes.
+  
+  |  Comando  | Descripción |
+  |-----------|-------------|
+  | `cd <carpeta>` | Mover la terminal a una carpeta o dirección |
+  |   `ls`    | Imprimir en la terminal los nombres de carpetas y archivos contenidos en la carpeta actual |
+  |  `magic`  | Ejecutar magic |
+  | `xschem`  | Ejecutar Xschem ()|
+  | `netgen <netlist1.spice> <netlist2.spice>` | Ejecutar Netgen (LVS) entre *netlist1* y *netlist2* |
+  |      |      |
+  |      |      |
+  |      |      |
+  |      |      |
+
+  
