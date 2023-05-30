@@ -113,7 +113,7 @@ Aparecerá una ventana emergente correspondiente a la terminal del contenedor.
   
 ### 3.1. Archivos
   
-  El contenedor creará una carpeta en `\usuario\EDA\eda\designs`. Esta carpeta es accesible desde el *host* y desde el entorno de desarrollo, lo que permite mover archivos fácilmente hacia o desde el contenedor.
+  El contenedor creará una carpeta en `\*nombre_de_usuario*\eda\designs`. Esta carpeta es accesible desde el *host* y desde el entorno de desarrollo, lo que permite mover archivos fácilmente hacia o desde el contenedor.
   
 ### 3.2. Comandos
   
