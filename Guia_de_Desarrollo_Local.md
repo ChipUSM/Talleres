@@ -76,7 +76,7 @@ La imagen de contenedor que usaremos para este entorno de desarrollo se llama **
   
 Se recomienda descargar el repositorio clonándolo con Git. Esto se puede hacer facilmente desde un cliente Git o desde una terminal con:
   >  $ cd <nombre_carpeta> <br>
-  >  $ git clone    www.github.com/iic-jku/iic-osic-tools.git
+  >  $ git clone    https://github.com/iic-jku/iic-osic-tools.git
   
 La ventaja de usar Git es que se puede actualizar la imagen facilmente, haciendo `git pull` del repositorio remoto.
   
