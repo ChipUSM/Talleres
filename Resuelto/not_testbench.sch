@@ -51,4 +51,4 @@ value=25f
 footprint=1206
 device="ceramic capacitor"}
 C {devices/gnd.sym} 430 -180 0 0 {name=l5 lab=GND}
-C {ChipUSM/Taller2_xschem/not.sym} 300 -260 0 0 {name=X1}
+C {not.sym} 300 -260 0 0 {name=X1}
