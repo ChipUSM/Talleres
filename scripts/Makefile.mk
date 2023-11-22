@@ -80,8 +80,8 @@ LVS_LAY=$(wildcard ./output/*_lay.spice)
 #################
 
 # https://xschem.sourceforge.io/stefan/xschem_man/developer_info.html
-XSCHEM=xschem --rcfile $(XSCHEM_RCFILE) --netlist_path $(OUTDIR) --netlist_filename $(TOP)_sch.spice 
-XSCHEM_NETLIST=$(XSCHEM) --netlist --preinit 'set lvs_netlist 1' --no_x --quit
+XSCHEM=xschem --rcfile $(XSCHEM_RCFILE)
+XSCHEM_NETLIST=$(XSCHEM) --netlist --netlist_path $(OUTDIR) --netlist_filename $(TOP)_sch.spice --preinit 'set lvs_netlist 1' --no_x --quit
 
 KLAYOUT=klayout -t -d 1
 
@@ -134,12 +134,12 @@ xschem: xschem-tb
 
 
 .PHONY: xschem-sch
-xschem-sch: logdir
+xschem-sch: logdir outdir
 	$(XSCHEM) $(TOP_SCH) |& tee $(XSCHEM_LOG)
 
 
 .PHONY: xschem-tb
-xschem-tb: logdir
+xschem-tb: logdir outdir
 	$(XSCHEM) $(TOP_TB) |& tee $(XSCHEM_LOG)
 
 
@@ -161,12 +161,17 @@ klayout: klayout-view
 
 
 .PHONY: klayout-view
-klayout-view: logdir
+klayout-view: logdir outdir
 	$(KLAYOUT) -ne $(GDS) |& tee $(KLAYOUT_LOG)
 
 
 .PHONY: klayout-edit
-klayout-edit: logdir
+klayout-edit: logdir outdir
+	$(KLAYOUT) -e $(GDS) |& tee $(KLAYOUT_LOG)
+
+
+.PHONY: klayout-lvs
+klayout-lvs: logdir outdir
 	$(KLAYOUT) -e $(GDS) |& tee $(KLAYOUT_LOG)
 
 
