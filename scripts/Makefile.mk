@@ -1,7 +1,7 @@
 # TODO: Are we catching stderr into log files?
 # TODO: Can we replace TOP from cli?  (make TOP=cell magic)?
 
-all: lvs parasitic
+all: lvs pex
 
 
 TIMESTAMP_DAY=$$(date +%Y-%m-%d)
@@ -21,7 +21,7 @@ NETGEN_LOG=$(LOGDIR)/$(TIMESTAMP_TIME)-netgen.log
 KLAYOUT_LOG=$(LOGDIR)/$(TIMESTAMP_TIME)-klayout.log
 
 MAGIC_LVS_LOG=$(LOGDIR)/$(TIMESTAMP_TIME)-magic-lvs.log
-MAGIC_PARASITIC_LOG=$(LOGDIR)/$(TIMESTAMP_TIME)-magic-parasitic.log
+MAGIC_PARASITIC_LOG=$(LOGDIR)/$(TIMESTAMP_TIME)-magic-pex.log
 XSCHEM_LVS_LOG=$(LOGDIR)/$(TIMESTAMP_TIME)-xschem-lvs.log
 KLAYOUT_LVS_LOG=$(LOGDIR)/$(TIMESTAMP_TIME)-klayout-lvs.log
 
@@ -172,7 +172,7 @@ klayout-edit: logdir outdir
 
 .PHONY: klayout-lvs
 klayout-lvs: logdir outdir
-	$(KLAYOUT) -e $(GDS) |& tee $(KLAYOUT_LOG)
+	python $(KLAYOUT_HOME)/lvs/run_lvs.py --run_mode=flat --spice_comments --layout=layout/$(TOP).gds --netlist=output/$(TOP)_sch.spice --variant=D --run_dir=logs --verbose  |& tee $(KLAYOUT_LOG)
 
 
 ########
@@ -180,7 +180,7 @@ klayout-lvs: logdir outdir
 ########
 
 # TODO: Magic DRC
-# TODO: Do parasitic extraction include resistances?
+# TODO: Do pex extraction include resistances?
 
 .PHONY: magic
 magic: magic-edit
@@ -196,8 +196,8 @@ magic-lvs: logdir outdir
 	LAYOUT=$(TOP_LAYOUT) TOP=$(TOP) $(MAGIC_BATCH) $(MAGIC_LVS) |& tee $(MAGIC_LVS_LOG)
 
 
-.PHONY: magic-parasitic
-magic-parasitic: logdir outdir
+.PHONY: magic-pex
+magic-pex: logdir outdir
 	LAYOUT=$(TOP_LAYOUT) TOP=$(TOP) $(MAGIC_BATCH) $(MAGIC_PARASITIC) |& tee $(MAGIC_PARASITIC_LOG)
 
 #########
@@ -220,5 +220,5 @@ netgen-lvs: logdir magic-lvs xschem-lvs
 lvs: netgen-lvs
 
 
-.PHONY: parasitic
-parasitic: magic-parasitic
+.PHONY: pex
+pex: magic-pex

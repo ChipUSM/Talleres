@@ -65,18 +65,10 @@ C {devices/iopin.sym} 1440 -350 0 0 {name=p1 lab=vout}
 C {devices/iopin.sym} 1340 -440 0 0 {name=p2 lab=vdd}
 C {devices/iopin.sym} 1270 -350 2 0 {name=p3 lab=vin}
 C {devices/iopin.sym} 1340 -260 2 0 {name=p4 lab=vss}
-C {devices/code.sym} 1518.75 -391.875 0 0 {name=MODELS
+C {devices/code.sym} 1458.75 -501.875 0 0 {name=MODELS
 only_toplevel=true
 place=header
 format="tcleval( @value )"
 value="
 .include $env(PDK_ROOT)/$env(PDK)/libs.tech/ngspice/design.ngspice
-
-.lib $env(PDK_ROOT)/$env(PDK)/libs.tech/ngspice/sm141064.ngspice typical
-.lib $env(PDK_ROOT)/$env(PDK)/libs.tech/ngspice/sm141064.ngspice mimcap_statistical
-.lib $env(PDK_ROOT)/$env(PDK)/libs.tech/ngspice/sm141064.ngspice cap_mim
-.lib $env(PDK_ROOT)/$env(PDK)/libs.tech/ngspice/sm141064.ngspice res_typical
-.lib $env(PDK_ROOT)/$env(PDK)/libs.tech/ngspice/sm141064.ngspice bjt_typical
-.lib $env(PDK_ROOT)/$env(PDK)/libs.tech/ngspice/sm141064.ngspice moscap_typical
-
 "}
