@@ -1,0 +1,15 @@
+* NGSPICE file created from inv.ext - technology: gf180mcuD
+
+.subckt pfet a_28_n136# w_n180_n88# a_n92_0# a_94_0#
+X0 a_94_0# a_28_n136# a_n92_0# w_n180_n88# pfet_03v3 ad=0.468p pd=2.74u as=0.468p ps=2.74u w=0.72u l=0.28u
+.ends
+
+.subckt nfet a_n84_n2# a_30_132# a_94_0# VSUBS
+X0 a_94_0# a_30_132# a_n84_n2# VSUBS nfet_03v3 ad=0.228p pd=1.98u as=0.228p ps=1.98u w=0.36u l=0.28u
+.ends
+
+.subckt inv Vdd Vin Vss Vout
+Xpfet_0 Vin Vdd Vdd Vout pfet
+Xnfet_0 Vss Vin Vout Vss nfet
+.ends
+

@@ -8,3 +8,13 @@ Luego descargar los insumos. También se pueden clonar directamente en el conten
 Regresar a rama main: https://github.com/ChipUSM/Talleres/tree/main
 
 
+## Problemas usuales
+
+
+### Visual Studio Code no actualiza el explorador de archivos
+
+A veces, vscode tarda demasiado en actualizar la lista de archivos, o simplemente no la actualiza.
+Ante esto, hay que forzar el refresco del explorador. Esto se puede hacer de dos maneras:
+
+1. Con el símbolo 🔁 en la parte superior del explorador
+2. Abrir el panel de comandos (Ctrl^P) y luego anotar "Refresh Explorer"
