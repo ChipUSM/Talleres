@@ -1,4 +1,4 @@
-v {xschem version=3.1.0 file_version=1.2
+v {xschem version=3.4.5 file_version=1.2
 }
 G {}
 K {}
@@ -23,7 +23,7 @@ C {devices/vsource.sym} 40 -250 0 0 {name=Vdd value=1.8}
 C {devices/vdd.sym} 40 -280 0 0 {name=l3 lab=VDD}
 C {devices/gnd.sym} 40 -220 0 0 {name=l4 lab=GND}
 C {devices/code_shown.sym} -650 -390 0 0 {name=NGSPICE only_toplevel=false value="
-.lib /foss/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+.lib /opt/pdks/sky130A/libs.tech/ngspice/sky130.lib.spice tt
 
 vin VIN 0 PULSE(0 1.8 1ns 0ns 0ns 2ns 4ns)
 
