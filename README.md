@@ -1,5 +1,5 @@
 # Taller 3
-Esta rama reune los archivos asociados al taller 3 de ChipUSM, titulado 'Layout Analógico'. El taller está en proceso de re-diseño, así que los archivos publicados corresponden a una versión antigua del taller 2 que aborda layout. Esto incluye: enunciado, insumos y resultados.
+Esta rama reune los archivos asociados al taller 3 de ChipUSM, titulado 'Layout Analógico'. Esto incluye: enunciado, insumos y resultados.
 
 Para empezar, instalar las herramientas del flujo analógico open-source (Xschem, Magic y netgen) y el PDK de la tecnología open-source SKY130. Para hacer esto, se sugiere utilizar un contenedor con todo lo necesario en Docker, siguiendo las instrucciones en el documento ["Guía de Desarrollo Local"](https://github.com/ChipUSM/Talleres/blob/taller_3/Guia_de_Desarrollo_Local.md).
 
