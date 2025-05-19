@@ -1,0 +1,19 @@
+Circuit: * C:\Users\Alfonso\Documents\USM\ChipUSM\Talleres\Taller_1-Primer_Layout\Taller1_Resuelto\nmos.asc
+
+
+Date: Tue Nov 22 12:45:59 2022
+Total elapsed time: 0.389 seconds.
+
+tnom = 27
+temp = 27
+method = trap
+totiter = 14026
+traniter = 0
+tranpoints = 0
+accept = 0
+rejected = 0
+matrix size = 5
+fillins = 0
+solver = Normal
+Matrix Compiler1:      12 opcodes  0.1/[0.0]/0.0
+Matrix Compiler2: off
