@@ -1,12 +1,10 @@
-# Taller 1
-Esta rama reune los archivos asociados al Taller 1 de ChipUSM, titulado 'Primer Layout'. Esto incluye: enunciados, insumos y resultados.
+# Talleres
+Este repositorio reune los archivos asociados a los talleres de diseño de circuitos integrados de ChipUSM. Esto incluye: enunciados, insumos y resultados.
 
+Para ver un taller selecciona la rama correspondiente:
 
+https://github.com/ChipUSM/Talleres/tree/taller_1
 
-Para realizar este taller debes:
-- Intalar LTSpice: [www.analog.com](https://www.analog.com/en/design-center/design-tools-and-calculators/ltspice-simulator.html)
-- Descarga los archivos
-- Seguir las instrucciones en la presentación 'Taller 1 primer layout'
+https://github.com/ChipUSM/Talleres/tree/taller_2
 
-Regresar a rama main: https://github.com/ChipUSM/Talleres/tree/main
 
