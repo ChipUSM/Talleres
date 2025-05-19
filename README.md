@@ -1,12 +1,7 @@
-# Taller 1
-Esta rama reune los archivos asociados al Taller 1 de ChipUSM, titulado 'Primer Layout'. Esto incluye: enunciados, insumos y resultados.
+# Talleres
+Esta rama reune los archivos asociados a los talleres de ChipUSM, documentados para la tecnología SKY130 y las herramientas L-edit, LTSpice, XSchem, Ngspic y Magic.
 
 
-
-Para realizar este taller debes:
-- Intalar LTSpice: [www.analog.com](https://www.analog.com/en/design-center/design-tools-and-calculators/ltspice-simulator.html)
-- Descarga los archivos
-- Seguir las instrucciones en la presentación 'Taller 1 primer layout'
 
 Regresar a rama main: https://github.com/ChipUSM/Talleres/tree/main
 
