@@ -57,4 +57,4 @@ C {gnd.sym} -360 140 0 0 {name=l2 lab=GND}
 C {vsource.sym} -360 -20 0 0 {name=Vdd value=\{Vdd\} savecurrent=false}
 C {lab_pin.sym} -360 -80 0 0 {name=p3 sig_type=std_logic lab=Vdd}
 C {gnd.sym} -360 10 0 0 {name=l4 lab=GND}
-C {/workspaces/usm-vlsi-tools/shared_xserver/IHP/Talleres/Taller1/inv_lv.sym} -220 50 0 0 {name=x1}
+C {../inv_lv.sym} -220 50 0 0 {name=x1}
