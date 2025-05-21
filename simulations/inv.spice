@@ -1,0 +1,7 @@
+** sch_path: /workspaces/usm-vlsi-tools/shared_xserver/IHP/Talleres-talleres_IHP/Taller3/Resuelto/inv.sch
+.subckt inv
+
+M2 Vout Vin Vss Vss sg13_lv_nmos l=0.13u w=0.3u ng=1 m=1
+M1 Vout Vin Vdd Vdd sg13_lv_pmos l=0.13u w=0.9u ng=3 m=1
+.ends
+.end
