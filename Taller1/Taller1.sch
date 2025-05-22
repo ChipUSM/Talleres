@@ -22,8 +22,8 @@ L 4 -415 30 -415 60 {}
 T {Simulaciones de compuerta NOT} 60 -120 0 0 0.4 0.4 {}
 T {Simulaciones de Transistores
 } -415 -120 0 0 0.4 0.4 {}
-C {/workspaces/usm-vlsi-tools/shared_xserver/Talleres/Taller1/Resuelto/Test_inv_hv.sym} 230 -30 0 0 {name=x1}
-C {/workspaces/usm-vlsi-tools/shared_xserver/Talleres/Taller1/Resuelto/Test_inv_lv.sym} 230 20 0 0 {name=x2}
+C {Resuelto/Test_inv_hv.sym} 230 -30 0 0 {name=x1}
+C {Resuelto/Test_inv_lv.sym} 230 20 0 0 {name=x2}
 C {title.sym} -480 160 0 0 {name=l1 author="Taller 1 ChipUSM"}
-C {/workspaces/usm-vlsi-tools/shared_xserver/Talleres/Taller1/Resuelto/Nmoslv_test.sym} -235 -30 0 0 {name=x3}
-C {/workspaces/usm-vlsi-tools/shared_xserver/Talleres/Taller1/Resuelto/Pmoslv_test.sym} -285 20 0 0 {name=x4}
+C {Resuelto/Pmoslv_test.sym} -285 20 0 0 {name=x4}
+C {Resuelto/Nmoslv_test.sym} -235 -30 0 0 {name=x3}
