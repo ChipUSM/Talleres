@@ -38,15 +38,16 @@ C {gnd.sym} -110 120 0 0 {name=l3 lab=GND}
 C {gnd.sym} -220 80 0 0 {name=l1 lab=GND}
 C {code.sym} -730 -150 0 0 {name=Simulacion only_toplevel=false value="
 .control
-save all
 
 tran 100p 13n
 plot v(Vin) v(vout)
 
 meas tran fall_time Trig  v(Vin) VAL=0.6 RISE=1 TARG v(Vout) VAL=0.6 FALL=1
 meas tran rise_time Trig  v(Vin) VAL=0.6 FALL=1 TARG v(Vout) VAL=0.6 RISE=1
+
 let time_diff = abs(fall_time - rise_time)
 let prop_time = (fall_time + rise_time)/2
+
 print time_diff
 print prop_time
 .endc
