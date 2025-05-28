@@ -31,7 +31,7 @@ spiceprefix=X
 }
 C {sg13g2_pr/sg13_lv_pmos.sym} -20 -40 0 0 {name=M1
 l=0.13u
-w=0.81u
+w=0.6u
 ng=1
 m=1
 model=sg13_lv_pmos
