@@ -13,6 +13,6 @@ L 4 200 -30 200 80 {}
 L 4 200 -280 200 -20 {}
 T {¿¿Ya resolviste el taller??
 Si no lo has resuelto favor volver al menú anterior} -210 -360 0 0 0.4 0.4 {}
-C {/workspaces/usm-vlsi-tools/shared_xserver/Talleres/Taller2/Resuelto/Nand.sym} -20 -200 0 0 {name=x2}
-C {/workspaces/usm-vlsi-tools/shared_xserver/Talleres/Taller2/Resuelto/nand_sim.sym} 20 20 0 0 {name=x3}
+C {Nand.sym} -20 -200 0 0 {name=x2}
+C {nand_sim.sym} 20 20 0 0 {name=x3}
 C {title.sym} -450 270 0 0 {name=l1 author="Solucionario Taller 2"}

@@ -81,7 +81,7 @@ spiceprefix=X
 }
 C {sg13g2_pr/sg13_hv_pmos.sym} 240 -90 0 0 {name=M2
 l=0.45u
-w=2.72u
+w=1u
 ng=1
 m=1
 model=sg13_hv_pmos
@@ -89,7 +89,7 @@ spiceprefix=X
 }
 C {sg13g2_pr/sg13_hv_pmos.sym} 50 -90 0 0 {name=M3
 l=0.45u
-w=2.72u
+w=1u
 ng=1
 m=1
 model=sg13_hv_pmos
