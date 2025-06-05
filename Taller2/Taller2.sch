@@ -18,6 +18,6 @@ T {Acá está parte del solucionario,
 en caso de que no puedan avanzar,
 son libres de verlo} 195 -290 0 0 0.3 0.3 {}
 C {title.sym} -30 20 0 0 {name=l1 author="Taller 2 - ChipUSM"}
-C {/workspaces/usm-vlsi-tools/shared_xserver/Talleres/Taller2/Insumos/NOT_TEST.sym} 0 -130 0 0 {name=x2}
-C {/workspaces/usm-vlsi-tools/shared_xserver/Talleres/Taller2/Insumos/NOT.sym} 10 -360 0 0 {name=x1}
-C {/workspaces/usm-vlsi-tools/shared_xserver/Talleres/Taller2/Resuelto/Soluciones.sym} 350 -180 0 0 {name=x3}
+C {Insumos/NOT_TEST.sym} 0 -130 0 0 {name=x2}
+C {Insumos/NOT.sym} 10 -360 0 0 {name=x1}
+C {Resuelto/Soluciones.sym} 350 -180 0 0 {name=x3}
