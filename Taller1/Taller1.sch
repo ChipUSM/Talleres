@@ -27,4 +27,4 @@ C {Resuelto/Test_inv_lv.sym} 0 30 0 0 {name=x2}
 C {title.sym} -480 160 0 0 {name=l1 author="Taller 1 ChipUSM"}
 C {Resuelto/Pmoslv_test.sym} -495 30 0 0 {name=x4}
 C {Resuelto/Nmoslv_test.sym} -445 -20 0 0 {name=x3}
-C {/workspaces/usm-vlsi-tools/shared_xserver/Talleres/Taller1/Insumos/Power_reduction.sym} 360 10 0 0 {name=x5}
+C {Insumos/Power_reduction.sym} 360 10 0 0 {name=x5}

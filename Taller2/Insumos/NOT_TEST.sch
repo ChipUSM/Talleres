@@ -52,7 +52,7 @@ print tpHL_fin - tpHL_in
 .endc
 "
 }
-C {/home/designer/shared/Taller2/NOT.sym} 340 -200 0 0 {name=x1}
+C {NOT.sym} 340 -200 0 0 {name=x1}
 C {capa-2.sym} 450 -50 0 0 {name=C1
 m=1
 value=25f

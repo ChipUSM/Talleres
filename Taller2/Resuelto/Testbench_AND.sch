@@ -36,8 +36,8 @@ N -160 150 -160 160 {
 lab=GND}
 N 70 40 160 40 {
 lab=Vout}
-C {/home/designer/shared/Taller2/NOT.sym} 30 -60 0 0 {name=x1}
-C {/home/designer/shared/Taller2/Nand.sym} -160 -10 0 0 {name=x2}
+C {../Insumos/NOT.sym} 30 -60 0 0 {name=x1}
+C {Nand.sym} -160 -10 0 0 {name=x2}
 C {vsource.sym} -330 -110 0 0 {name=V1 value=3.3 savecurrent=false}
 C {gnd.sym} -330 -80 0 0 {name=l1 lab=GND}
 C {gnd.sym} -160 160 0 0 {name=l2 lab=GND}

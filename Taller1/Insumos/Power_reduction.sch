@@ -13,16 +13,24 @@ N -380 90 -380 120 {
 lab=Vin}
 N -380 90 -280 90 {
 lab=Vin}
-N -380 -40 -380 -10 {
-lab=Vdd}
 N -240 -40 -240 60 {
-lab=Vdd}
-N -380 -40 -240 -40 {
-lab=Vdd}
+lab=#net1}
 N -560 -140 -560 -110 {
 lab=E}
 N -560 -60 -560 -50 {
 lab=GND}
+N -380 -70 -380 -10 {
+lab=Vdd}
+N -380 -130 -240 -130 {
+lab=Vdd}
+N -240 -130 -240 -100 {
+lab=Vdd}
+N -380 -70 -240 -70 {
+lab=Vdd}
+N -380 -130 -380 -70 {
+lab=Vdd}
+N -200 -70 -170 -70 {
+lab=E}
 C {code_shown.sym} -720 0 0 0 {name=Modelos only_toplevel=false value="
 .lib cornerMOSlv.lib mos_tt
 "}
@@ -66,3 +74,12 @@ C {../Insumos/inv_lv.sym} -240 90 0 0 {name=x1}
 C {vsource.sym} -560 -90 0 0 {name=Vin1 value="PULSE(0 \{Vdd\} 0 100p 100p 30n 60n)" savecurrent=false}
 C {gnd.sym} -560 -50 0 0 {name=l5 lab=GND}
 C {lab_pin.sym} -560 -140 2 0 {name=p4 sig_type=std_logic lab=E}
+C {sg13g2_pr/sg13_lv_pmos.sym} -220 -70 2 0 {name=M1
+l=0.45u
+w=1.0u
+ng=1
+m=1
+model=sg13_lv_pmos
+spiceprefix=X
+}
+C {lab_pin.sym} -170 -70 2 0 {name=p5 sig_type=std_logic lab=E}

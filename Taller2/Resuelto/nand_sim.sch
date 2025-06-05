@@ -82,7 +82,7 @@ model=sg13_hv_nmos
 spiceprefix=X
 }
 C {sg13g2_pr/sg13_hv_pmos.sym} -360 -380 0 0 {name=M2
-l=2.72u
+l=0.45u
 w=1.0u
 ng=1
 m=1
@@ -91,7 +91,7 @@ spiceprefix=X
 }
 C {sg13g2_pr/sg13_hv_pmos.sym} -550 -380 0 0 {name=M3
 l=0.45u
-w=2.72u
+w=1.0u
 ng=1
 m=1
 model=sg13_hv_pmos
@@ -111,9 +111,9 @@ C {vsource.sym} -670 -440 0 0 {name=Vd value=3.3 savecurrent=false}
 C {gnd.sym} -670 -410 0 0 {name=Vd1 lab=GND}
 C {lab_pin.sym} -500 -210 2 1 {name=p1 sig_type=std_logic lab=V1}
 C {lab_pin.sym} -600 -90 2 1 {name=p2 sig_type=std_logic lab=V2}
-C {vsource.sym} -1060 -270 0 0 {name=Vin value="PULSE(0 3.3 1n 100p 100p 10n 20n)"  savecurrent=false}
+C {vsource.sym} -1060 -270 0 0 {name=Vin value="PULSE(0 3.3 50n 100p 100p 50n 100n)"  savecurrent=false}
 C {gnd.sym} -1060 -240 0 0 {name=l2 lab=GND}
-C {vsource.sym} -1060 -160 0 0 {name=Vin1 value="PULSE(0 3.3 1n 100p 100p 100n 200n)"  savecurrent=false}
+C {vsource.sym} -1060 -160 0 0 {name=Vin1 value="PULSE(0 3.3 100n 100p 100p 100n 200n)"  savecurrent=false}
 C {gnd.sym} -1060 -130 0 0 {name=l3 lab=GND}
 C {lab_pin.sym} -1060 -300 2 1 {name=p4 sig_type=std_logic lab=V1}
 C {lab_pin.sym} -1060 -190 2 1 {name=p5 sig_type=std_logic lab=V2}
@@ -122,13 +122,13 @@ C {code_shown.sym} -1560 -600 0 0 {name=Simulacion only_toplevel=false value="
 .control
 save all
 
-tran 10p 200n
+tran 10p 270n
 plot v(V1)+v(V2) 
 plot v(vout)
 plot v(V1) v(V2)
 
-meas tran rise_time Trig  v(Vout) VAL=0.01 RISE=1 TARG v(Vout) VAL=1.65 RISE=1
-meas tran fall_time Trig  v(vout) VAL=3.25 FALL=1 TARG v(Vout) VAL=1.65 FALL=1
+meas tran fall_time Trig  v(V1) VAL=1.65 RISE=1 TARG v(Vout) VAL=1.65 FALL=1
+meas tran rise_time Trig  v(V1) VAL=1.65 FALL=2 TARG v(Vout) VAL=1.65 RISE=1
  
 .endc
 "}
