@@ -7,4 +7,11 @@ https://github.com/ChipUSM/Talleres/tree/talleres_SKY130
 
 https://github.com/ChipUSM/Talleres/tree/talleres_IHP
 
-
+Para clonar los talleres en SKY130:
+~~~powershell
+git clone https://github.com/ChipUSM/Talleres.git --branch talleres_SKY130
+~~~
+Para clonar los talleres en IHP 130nm:
+~~~powershell
+git clone https://github.com/ChipUSM/Talleres.git --branch talleres_IHP
+~~~
