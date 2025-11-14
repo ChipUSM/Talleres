@@ -1,0 +1,18 @@
+v {xschem version=3.4.5 file_version=1.2
+}
+G {}
+K {type=subcircuit
+format="@name @pinlist @symname"
+template="name=x1"
+}
+V {}
+S {}
+E {}
+L 4 -110 -20 150 -20 {}
+L 4 -110 10 150 10 {}
+L 4 -110 -20 -110 0 {}
+L 4 150 -20 150 0 {}
+L 4 150 0 150 10 {}
+L 4 -110 0 -110 10 {}
+T {@symname} -86.5 -16 0 0 0.3 0.3 {}
+T {@name} 155 -32 0 0 0.2 0.2 {}
